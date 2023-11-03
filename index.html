@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu cita</title>
+    
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+
+    <style>
+        body {
+            background-image: url(imagenes/Agendacion.jpg);
+            background-size: cover;
+
+        }
+        .form-container {
+            background-color: #fff;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<main class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6 form-container">
+            <h2 class="text-center">Agenda tu cita</h2>
+            <form class="formulario__login" method="POST" action="login.php">
+                <div class="form-group mb-3">
+                    <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuario">
+                </div>
+                <div class="form-group mb-3">
+                    <input type="password" id="contrasena" name="contrasena" class="form-control" placeholder="Contraseña">
+                </div>
+                <button type="submit" name="Ingresar" class="btn btn-primary btn-block">Ingresar</button>
+            </form>
+            <p class="text-center mt-3">¿No tienes una cuenta? <a href="registrar.php">Regístrate</a></p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
